@@ -1,4 +1,47 @@
-<?php
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--include Bootstrap's CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link my style-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>policies.google</title>
+</head>
+<body>
+
+    <header class="header fixed-top">
+        <div>
+            <h4>Google Privacy e termini</h4>
+        </div>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Introduzione</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Norme sulla privacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Termini di servizio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Tecnologie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Domande frequenti</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main">
+
+    <?php
 
 $faq = [
 
@@ -38,50 +81,11 @@ $faq = [
 ?>
 
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--include Bootstrap's CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!--link my style-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>policies.google</title>
-</head>
-<body>
-
-    <header>
-        <div>
-            <h4>Google Privacy e termini</h4>
-        </div>
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Introduzione</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Norme sulla privacy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Termini di servizio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Tecnologie</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Domande frequenti</a>
-        </li>
-      </ul>
-    </header>
-
-    <main>
         <?php foreach( $faq as $questionsClass ) { ?>
             <?php foreach( $questionsClass as $faq ) { ?>
-                <?php echo "<br>" ?>;
-                <?php echo $faq ?>;
-                <?php echo "<br>" ?>;
+                <?php echo "<br>" ?>
+                <?php echo $faq ?>
+                <?php echo "<br>" ?>
             <?php } ?>
        <?php } ?> 
     </main>
